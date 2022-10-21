@@ -114,9 +114,20 @@ nav .container {
 .button{
   padding: 10px 20px !important;
   border-radius: 8px;
-  border: 1px solid #c0c0c0;
+  border: 1px solid #64BDFF;
   transition: 0.3s;
+  color: #f3f4f5 !important;
+  background-color: #64BDFF;
 }
+
+.button:hover{
+    padding: 10px 20px !important;
+    border-radius: 8px;
+    border: 1px solid #c0c0c0;
+    transition: 0.3s;
+    color: #3F4E4F !important;
+    background-color: #ffffff;
+  }
 
 /* Line */
 .line {
@@ -157,10 +168,8 @@ nav .container {
 }
 
 .jumbotron .column img {
-    top: -20%;
-    width: 90%;
+    width: 100%;
     right: 0;
-    height: 120%;
 }
 .jumbotron .column h2 {
     font-size: 40px;
@@ -199,152 +208,126 @@ nav .container {
   border: none;
 }
 
-/* Features */
-.features {
+/* resort */
+.resort {
     max-width: 1250px;
     margin: auto;
     min-height: 600px;
 }
-.features h2 {
-    font-size: 28px;
-    font-weight: 500;
-    padding: 20px;
+.resort h2 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
     line-height: 35px;
 }
-.features p {
-    color: var(--persian-green, #2A9D8F);
-    font-size: 18px;
-    font-weight: 500;
-    padding: 20px 20px 0;
+.resort p {
+    color: #858585;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 200;
+    padding: 15px 15px 0;
+    margin-bottom: 50px;
 }
-.features .container {
+.resort .container {
     margin: 20px;
 }
-.features .row {
+.resort .row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.features .card {
+.resort .card {
     flex: 1;
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    padding: 20px;
     border-radius: 20px;
     text-align: center;
     position: relative;
+    margin: 10px;
+    border-radius: 20px;
     overflow: hidden;
-    background-color: var(--bg-color, #f3f4f5);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.features .card .layer {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--primary, #ffd700);
-    transition: 0.5s;
+.resort .card img{
+    width: 100%;
+    border-radius: 10px;
 }
-.features .card .content {
-    position: relative;
+.resort .card h3 {
+    text-align: left;
+    margin: 15px 0;
+    font-size: 20px;
 }
-.features .card:hover .layer {
-    top: 0;
-}
-.features .card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: white;
-}
-.features .card h3 {
-    margin-top: 20px;
-    font-size: 18px;
+.resort .card p {
+    text-align: left;
+    padding: 0;
+    font-size: 14px;
 }
 
-/* Pricing */
-.pricing {
+/* btn explore more */
+.explore-button{
+    text-align: center;
+}
+
+.button-explore{
+    border-radius: 3px;
+    background: #64BDFF;
+    color: white;
+    padding: 5px 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+}
+
+.button-explore:hover {
+    cursor: pointer;
+    color: #264653;
+}
+
+
+/* featured */
+.featured {
     max-width: 1250px;
     margin: 50px auto;
     min-height: 600px;
 }
-.pricing h2 {
-    font-size: 28px;
-    font-weight: 500;
+.featured h2 {
+    font-size: 32px;
+    font-weight: 400;
     text-align: center;
-    padding: 20px;
 }
-.pricing .container {
+.featured p {
+    color: #858585;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 200;
+    padding: 15px 15px 0;
+    margin-bottom: 50px;
+}
+.featured .container {
     margin: 20px;
 }
-.pricing .row {
+.featured .row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.pricing .card {
+.featured .card {
     flex: 1;
     width: 300px;
     margin: 10px;
-    padding: 20px;
     border-radius: 20px;
     text-align: center;
     position: relative;
-    background-color: var(--bg-color, #f3f4f5);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.pricing .card .label {
-    background-color: var(--secondary, #264653);
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+
+.featured .card img {
+    width: 100%;
 }
-.pricing .card:nth-of-type(2) .label {
-    background-color: var(--primary, #ffd700);
-    color: black;
-    font-weight: 500;
-}
-.pricing .card .price-title {
-    height: 120px;
-}
-.pricing .card h3 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 50px;
-}
-.pricing .card p {
-    font-size: 16px;
-    line-height: 20px;
-    padding: 15px;
-}
-.pricing .card p.price-idr {
+.featured .card h3 {
     font-size: 32px;
     font-weight: 500;
 }
-.pricing .card .price-fitur .button {
-    text-decoration: none;
+.featured .card p {
+    font-size: 16px;
     margin-top: 20px;
-    display: inline-block;
-    font-weight: 500;
-}
-.pricing hr {
-    max-width: 300px;
-}
-.pricing .card .price-fitur ul {
-    margin-top: 20px;
-    text-align: left;
-}
-.pricing .card .price-fitur ul li {
-    margin-top: 10px;
-}
-.pricing .card .price-fitur img {
-    margin-right: 5px;
+    line-height: 20px;
 }
 
 /* About */
@@ -354,12 +337,14 @@ nav .container {
     padding: 20px 0;
 }
 .about .container {
-    background-color: var(--bg-color, #f3f4f5);
-    margin: 20px;
-    padding: 20px;
-    border: 10px solid var(--primary, #ffd700);
-    border-radius: 150px;
+    margin: 0px 80px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    padding: 30px;
     overflow: auto;
+    background-color: #64BDFF;
+    border: 2px solid #64BDFF;
+    border-radius: 10px;
+    color: #ffffff;
 }
 .about .container .wrapper {
     max-width: 900px;
@@ -388,9 +373,9 @@ nav .container {
     text-align: center;
 }
 .about aside img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
 }
 .about aside h3 {
     font-size: 18px;
@@ -449,11 +434,11 @@ footer p {
     .jumbotron .column p {
         padding: 10px 0px;
     }
-    .features .card {
+    .resort .card {
         flex: 50%;
         max-width: 400px;
     }
-    .pricing .card {
+    .featured .card {
         flex: 50%;
         max-width: 500px;
     }
@@ -528,7 +513,7 @@ footer p {
     .jumbotron .column h1 {
         font-size: 40px;
     }
-    .features h2 {
+    .resort h2 {
         font-size: 24px;
     }
 }

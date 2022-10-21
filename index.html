@@ -1,70 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="./assets/images/logo.png"
-      type="image/gif"
-      sizes="16x16"
-    />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <script src="https://kit.fontawesome.com/728c9123d0.js" crossorigin="anonymous"></script>
-    <title>Nginep</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="container">
-          <div class="navbar-brand">
-            <a href="#home" class="page-scroll">Nginep</a>
-          </div>
 
-          <ul class="nav-list">
-            <div class="icon cancel-btn">
-              <i class="fas fa-times"></i>
-            </div>
-            <li>
-              <a href="#home" class="line dropdown">Home</a>
-            </li>
-            <li><a href="#features" class="line page-scroll">Featured</a></li>
-            <li>
-              <a href="#pricing" class="line page-scroll">About</a>
-            </li>
-            <li><a href="#about" class="line page-scroll">Login</a></li>
-            <li><a href="#" class="button">Sign Up</a></li>
-          </ul>
-          <div class="icon menu-btn">
-            <i class="fas fa-bars"></i>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/images/logo.png" type="image/gif" sizes="16x16" />
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+  <script src="https://kit.fontawesome.com/728c9123d0.js" crossorigin="anonymous"></script>
+  <title>Nginep</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="#home" class="page-scroll">Nginep</a>
         </div>
-      </nav>
-      <div class="jumbotron">
-        <div class="container">
-          <div class="column">
-            <h2>Book your next holiday in just a few clicks</h2>
-            <p>With Nginep, you can get recommendations for the best hotels and resorts, at low prices and locations close to tourist sites.</p>
-            <p>destination</p>
-              <form action="" class="search-component">
-                <input type="search" placeholder="Jakarta, Indonesia" autocomplete="off" autofocus>
-                <button type="submit" class="button">Explore</button>
-              </form>
+
+        <ul class="nav-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
           </div>
-          <div class="column jumbotron-image">
-            <img src="assets/images/joel-filipe.png" alt="apart" />
+          <li>
+            <a href="#home" class="line dropdown">Home</a>
+          </li>
+          <li><a href="#resort" class="line page-scroll">Resort</a></li>
+          <li>
+            <a href="#featured" class="line page-scroll">Featured</a>
+          </li>
+          <li><a href="#login" class="line page-scroll">Login</a></li>
+          <li><a href="#signup" class="button">Sign Up</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="column">
+          <h2>Book your next holiday in just a few clicks</h2>
+          <p>With Nginep, you can get recommendations for the best hotels and resorts, at low prices and locations close
+            to tourist sites.</p>
+          <p>destination</p>
+          <form action="" class="search-component">
+            <input type="search" placeholder="Jakarta, Indonesia" autocomplete="off" autofocus>
+            <button type="submit" class="button">Explore</button>
+          </form>
+        </div>
+        <div class="column jumbotron-image">
+          <img src="assets/images/joel-filipe.png" alt="apart" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article id="resort" class="resort">
+      <h2>Explore more Hotel & Resort</h2>
+      <p>Browse for the best lodging in Nginep</p>
+      <div class="container">
+        <div class="row">
+          <div class="card">
+            <div class="content">
+              <img src="assets/images/adden-hotel.png" alt="adden-hotel">
+              <h3>Adden Hotel</h3>
+              <p>Helsinki, Finlandia</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img src="assets/images/rodisson-hotel.png" alt="rodisson-hotel">
+              <h3>Rodisson Hotel</h3>
+              <p>Kopenhagen, Denmark</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img src="assets/images/vertix-hotel.png" alt="vertix-hotel">
+              <h3>Vertix Hotel</h3>
+              <p>Amsterdam, Netherland</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img src="assets/images/royal-hotel.png" alt="royal-hotel">
+              <h3>Royal Hotel</h3>
+              <p>Jakarta, Indonesia</p>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </article>
 
-    <!-- Javascript -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+    <div class="explore-button">
+      <button type="button" class="button-explore">Explore More</button>
+    </div>
+
+    <article id="featured" class="featured">
+      <h2>Why nginep?</h2>
+      <p>Several reasons for using nginep</p>
+      <div class="container">
+        <div class="row">
+          <div class="card">
+            <img src="./assets/images/hotel listed.svg" alt="">
+            <h3 class="card-text text-center">5000+ Lodgings</h3>
+            <p>More than 5000 lodgings listed on nginep</p>
+          </div>
+          <div class="card">
+            <img src="./assets/images/cities.svg" alt="">
+            <h3 class="card-text text-center">250+ City</h3>
+            <p>There are registered lodgings with stays in more than 250 cities in the world</p>
+          </div>
+          <div class="card">
+            <img src="./assets/images/money guaranteed.svg" alt="">
+            <h3 class="card-text text-center">Guaranteed</h3>
+            <p>money back guarantee if you experience that lodging does not match what is stated in the photo</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="about" class="about">
+      <div class="container">
+        <div class="wrapper">
+          <section>
+            <h2>About Nginep</h2>
+            <p>Nginep is a platform that provides online lodging booking services, With Nginep, you can get recommendations for the best hotels and resorts, at low prices and locations close to tourist sites.</p>
+          </section>
+          <aside>
+            <img src="assets/images/profile.jpeg" alt="Foto Profile Ahmad Fauzi">
+            <h3>Perdana Putro Harwanto</h3>
+          </aside>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="container mb-2 ">
+    <div class="row">
+      <div class="">
+          <p>Nginep is a platform that provides online lodging booking services</p>
+      </div>
+      <ul class="footer-list">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+        <li><a href="#">Privasi dan Kebijakan</a></li>
+        <li><a href="#">Syarat dan Ketentuan</a></li>
+    </ul>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
