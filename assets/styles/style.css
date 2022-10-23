@@ -386,7 +386,7 @@ nav .container {
 /* Footer */
 footer {
     width: 100%;
-    background-color: var(--secondary, #264653);
+    background-color: #64BDFF;
     text-align: center;
     padding: 20px;
 }
@@ -401,12 +401,12 @@ footer {
 .footer-list a {
     font-size: 16px; 
     font-weight: 500;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     opacity: 0.7;
 }
 .footer-list a:hover {
-    opacity: 1;
+    color: #264653;
 }
 footer hr {
     max-width: 800px;
@@ -415,9 +415,8 @@ footer hr {
 }
 footer p {
     font-size: 16px;
-    color: white;
+    color: #264653;
     font-weight: 500;
-    padding-top: 10px;
     opacity: 0.7;
 }
 
@@ -476,15 +475,12 @@ footer p {
         left: 0;
         height: 100vh;
         width: 100%;
-        background: var(--secondary, #264653);
+        background: #264653;
         display: block;
         padding: 40px 0;
         text-align: center;
         clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
         transition: all 0.3s ease;
-    }
-    nav.sticky .nav-list {
-        clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
     }
     nav .nav-list.active {
         clip-path: circle(75%);
@@ -500,9 +496,6 @@ footer p {
       border-radius: 8px;
       border: 1px solid #c0c0c0;
       transition: 0.3s;
-    }
-    .nav-list .submenu-show {
-        display: none;
     }
 }
 
